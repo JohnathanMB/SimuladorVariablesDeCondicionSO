@@ -1,0 +1,48 @@
+body {
+    padding: 10px;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#buttons{
+    width: 100%;
+}
+
+#divButtonConsumer{
+    text-align: center;
+    width: 25%;
+    display: inline;
+    margin: 30px;
+}
+
+#divButtonProducer{
+    text-align: center;
+    width: 25%;
+    display: inline;
+    margin: 30px;
+}
+
+#buttonConsumer{
+    width: 120px;
+    height: 70px;
+}
+
+#buttonProducer{
+    width: 120px;
+    height: 70px;
+    
+}
+
+#divLabelCell{
+    display: flex;
+    justify-content: center;
+}
+
+.divLabelCellHijo{
+    width: 30%;
+    margin: 20px;
+    border: solid 1px;
+    padding: 10px;
+    margin: 10px;
+}
