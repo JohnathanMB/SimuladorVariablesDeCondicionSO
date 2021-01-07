@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="simulador.css">
 </head>
-<body>
+<body class="body">
     <div id="divTittle">
 
         <h1> Productor - Consumidor con Variable de Condición </h1>
@@ -23,7 +23,7 @@
         </div>
     
     
-    <div id="divLabelCell">
+    <div id="divLabelCell" class="divFather">
         <div class="divLabelCellHijo">
             <input type="color" value="#188E00" disabled="disabled">
             <label id="labelItem">Celda con ítem</label><br/>
@@ -31,7 +31,30 @@
             <input type="color" value="#26E600" disabled="disabled">
             <label id="labelNoItem">Celda sin ítem</label>
         </div>
+
+        
         
     </div>
+
+    <div class="divFather">
+        <div id="tableContainer">
+            <table class="default">
+                <tr class="row">
+                    <td class="column_void"></td>
+                    <td class="column_void"></td>
+                    <td class="column_full"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="divFather">
+        <div id="divCounter">
+            <label>Contador de ítems</label>
+            <h1>1</h1>
+        </div>
+    </div>
+
+
 </body>
 </html>
