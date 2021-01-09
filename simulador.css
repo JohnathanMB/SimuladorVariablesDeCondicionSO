@@ -14,14 +14,14 @@ body {
 #divButtonConsumer{
     text-align: center;
     width: 25%;
-    display: inline;
+    
     margin: 30px;
 }
 
 #divButtonProducer{
     text-align: center;
     width: 25%;
-    display: inline;
+    
     margin: 30px;
 }
 
@@ -98,5 +98,6 @@ h3{
 
 .containerVC{
     border: solid 1px #00FDFF;
-    width: 15%;
+    width: 80px;
+    
 }
