@@ -83,7 +83,20 @@ h1{
     margin: 0;
 }
 
+h2{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
 .img-quest:hover{
     background-color: #00FDFF;
     
+}
+
+.containerVC{
+    border: solid 1px #00FDFF;
+    width: 15%;
 }
