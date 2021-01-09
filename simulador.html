@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="simulador.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="simulador.css">
 </head>
+
 <body class="body">
     <div id="divTittle">
 
-        <h1> 
-            Productor - Consumidor con Variable de Condición 
+        <h1>
+            Productor - Consumidor con Variable de Condición
             <span title="Una variable de condición (VC) es una estrategia que hace uso 
 de una variable para determinar si se cumplen las condiciones para ejecutar
-una porción de código o esperar el cumplimiento de uno o varios eventos." >
+una porción de código o esperar el cumplimiento de uno o varios eventos.">
                 <img src="images/question-circle.svg" class="img-quest"></img>
             </span>
         </h1>
@@ -25,7 +28,7 @@ una porción de código o esperar el cumplimiento de uno o varios eventos." >
             <tr>
                 <td>
                     <span title="Variable de condición para Consumidor:
-Se encarga de validar si el consumidor tiene ítems disponbles para tomar." >
+Se encarga de validar si el consumidor tiene ítems disponbles para tomar.">
                         <img src="images/question-circle.svg" class="img-quest"></img>
                     </span>
                 </td>
@@ -36,37 +39,38 @@ Se encarga de validar si el consumidor tiene ítems disponbles para tomar." >
                     </div>
                 </td>
                 <td>
-                    <input id="buttonConsumer" type="button" class="button" value="Consumidor"></input>
+                    <input id="buttonConsumer" type="button" class="button" value="Consumidor" onclick="takeProduct()"></input>
                 </td>
                 <td>
-                    <input id="buttonProducer" type="button" class="button" value="Productor"></input>
+                    <input id="buttonProducer" type="button" class="button" value="Productor"
+                        onclick="addProduct()"></input>
                 </td>
                 <td>
                     <div class="containerVC">
                         <label>VC Productor</label><br>
-                        <label>1</label> 
+                        <label>0</label>
                     </div>
                 </td>
                 <td>
                     <span title="Variable de condición para Productor:
-Se encarga de validad si el productor tiene celdas disponibles para poner nuevos ítems." >
+Se encarga de validad si el productor tiene celdas disponibles para poner nuevos ítems.">
                         <img src="images/question-circle.svg" class="img-quest"></img>
                     </span>
                 </td>
-                                    
+
             </tr>
         </table>
 
     </div>
-    
+
     <div id="divLabelCell" class="divFather">
         <div class="divLabelCellHijo">
             <input type="color" value="#188E00" disabled="disabled">
-            <label id="labelItem">Celda con ítem</label><br/>
-            
+            <label id="labelItem">Celda con ítem</label><br />
+
             <input type="color" value="#26E600" disabled="disabled">
             <label id="labelNoItem">Celda sin ítem</label>
-        </div>       
+        </div>
     </div>
 
     <div class="divFather">
@@ -87,11 +91,11 @@ Se encarga de validad si el productor tiene celdas disponibles para poner nuevos
                 <td>
                     <div id="divCounter">
                         <label>Contador de ítems</label>
-                        <h1>1</h1>
+                        <h1 id="items">0</h1>
                     </div>
                 </td>
                 <td>
-                    <span title="Variable de condición para Productor" >
+                    <span title="Variable de condición para Productor">
                         <img src="images/question-circle.svg" class="img-quest"></img>
                     </span>
                 </td>
@@ -100,4 +104,5 @@ Se encarga de validad si el productor tiene celdas disponibles para poner nuevos
     </div>
 
 </body>
+
 </html>
