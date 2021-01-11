@@ -28,7 +28,8 @@ una porción de código o esperar el cumplimiento de uno o varios eventos.">
             <tr>
                 <td>
                     <span title="Variable de condición para Consumidor:
-Se encarga de validar si el consumidor tiene ítems disponbles para tomar.">
+Se encarga de validar si el consumidor tiene ítems disponbles para tomar.
+Si es 0 no tiene items disponibles para tomar, puede haber un maximo de 3">
                         <img src="images/question-circle.svg" class="img-quest"></img>
                     </span>
                 </td>
@@ -39,7 +40,7 @@ Se encarga de validar si el consumidor tiene ítems disponbles para tomar.">
                     </div>
                 </td>
                 <td>
-                    <input id="buttonConsumer" type="button" class="button" value="Consumidor" onclick="takeProduct()"></input>
+                    <input id="buttonConsumer" type="button" class="button" value="Consumidor" onclick="takeProduct()" disabled="true"></input>
                 </td>
                 <td>
                     <input id="buttonProducer" type="button" class="button" value="Productor"
@@ -53,7 +54,8 @@ Se encarga de validar si el consumidor tiene ítems disponbles para tomar.">
                 </td>
                 <td>
                     <span title="Variable de condición para Productor:
-Se encarga de validad si el productor tiene celdas disponibles para poner nuevos ítems.">
+Se encarga de validar si el productor tiene celdas disponibles para poner nuevos ítems.
+Si es 0 no tiene celdas disponibles para poner items, tiene un maximo de 3 celdas disponibles">
                         <img src="images/question-circle.svg" class="img-quest"></img>
                     </span>
                 </td>
