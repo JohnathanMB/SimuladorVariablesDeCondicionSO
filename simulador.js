@@ -13,6 +13,11 @@ function addProduct() {
     if (VCProductor == 0) {
         document.querySelector('#buttonProducer').disabled = true;
     }
+    document.querySelector('#divCounter').style.backgroundColor = "#188E00";
+    setTimeout(function () { document.querySelector('#divCounter').style.backgroundColor = null; }, 100);
+
+
+
 }
 
 function takeProduct() {
@@ -26,4 +31,6 @@ function takeProduct() {
     if (VCConsumidor == 0) {
         document.querySelector('#buttonConsumer').disabled = true;
     }
+    document.querySelector('#divCounter').style.backgroundColor = "#26E600";
+    setTimeout(function () { document.querySelector('#divCounter').style.backgroundColor = null; }, 100);
 }
